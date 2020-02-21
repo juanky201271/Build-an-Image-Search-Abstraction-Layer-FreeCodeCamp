@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Build an Image Search Abstraction Layer</title>
+    <meta name="Image Search Abstraction Layer" content="FreeCodeCamp practice">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Image Search Abstraction Layer
+      </h1>
+    </header>
+
+    <main>
+      
+      <p class="bold">Web Services:</p>
+      
+      <p>Looking for images:</p>
+      
+      <form id="formTextSearch">
+        text to find images: <input id="textSearch" name="textSearch" type="text" maxlength="100" required="" placeholder="What images do you want to find...">
+        offsett: <input id="textSearchOffset" name="textSearchOffset" type="text" maxlength="5" value="10" required="" placeholder="How many items...">
+        <button type="submit">Submit Search</button>
+      </form>
+      <br /><br /><br />
+      <p>Looking for searchs:</p>
+      
+      <form id="formSearchs">
+        offset: <input id="searchsOffset" name="searchsOffset" type="text" maxlength="5" value="10" required="" placeholder="How many items...">
+        <button type="submit">Lastest Searchs</button>
+      </form>
+      <br /><br /><br />
+      <form id="formSearchID">
+        search ID: <input id="ID" name="ID" type="text" maxlength="30" required="" placeholder="What ID do you want to view...">
+        <button type="submit">View one Search</button>
+      </form>
+      <br /><br /><br />
+      <code id="jsonResult"></code>
+      <br /><br /><br />
+    </main>
+
+    <footer>
+      Made with <a href="https://glitch.com">Glitch</a>!
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/public/client.js"></script>
+    
+  </body>
+</html>
